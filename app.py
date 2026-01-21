@@ -42,9 +42,9 @@ div.stButton > button:first-child:focus {
 # -------------------------------------------------
 @st.cache_resource
 def load_artifacts():
-    clf = joblib.load("classification_model.pkl")
-    reg = joblib.load("regression_model.pkl")
-    feature_cols = joblib.load("feature_columns.pkl")
+    clf = joblib.load("models/classification_model.pkl")
+    reg = joblib.load("models/regression_model.pkl")
+    feature_cols = joblib.load("models/feature_columns.pkl")
     return clf, reg, feature_cols
 
 clf_model, reg_model, feature_columns = load_artifacts()
@@ -341,4 +341,5 @@ with tab4:
 # ---------------------------------------
 st.markdown("-------")
 st.caption("© 2025 • Built with Streamlit & Machine Learning")
+
 st.caption("Developed by Vadla Shiva Kumar")

@@ -54,7 +54,7 @@ clf_model, reg_model, feature_columns = load_artifacts()
 # -------------------------------------------------
 @st.cache_data
 def load_data():
-    return pd.read_csv("https://drive.google.com/uc?id=1BxraY54y-iD8fDmCHFHGdMjEyPVR_Ios")
+    return pd.read_csv("data/india_housing_prices.csv")
 
 df = load_data()
 
